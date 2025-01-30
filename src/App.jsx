@@ -88,7 +88,7 @@ const App = () => {
       <div className="trusted-section">
         <p>Trusted by over 16,000 companies and millions of learners around the world</p>
         <div className="logo-container">
-          {["volks.jpeg", "Samsung.jpeg", "lg.jpeg", "aws.jpeg", "google.jpeg", "meta.jpeg", "tesla.jpeg", "nvidia.jpeg"].map((logo) => (
+          {["./volks.jpeg", "./Samsung.jpeg", "./lg.jpeg", "./aws.jpeg", "./google.jpeg", "./meta.jpeg", "./tesla.jpeg", "./nvidia.jpeg"].map((logo) => (
             <img key={logo} src={`src/${logo}`} alt={logo.split(".")[0]} />
           ))}
         </div>
