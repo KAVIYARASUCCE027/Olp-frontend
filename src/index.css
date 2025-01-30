@@ -1,0 +1,649 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/*  TOP BAR  */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  left: 0;
+  top: 0%;
+  
+  border-bottom: #0b66c3;
+  justify-content: space-between;
+  background-color: #cca2cc;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height:10%;
+  width: 100%;
+  z-index: 10;
+}
+
+.logoimage {
+  width: 500px; 
+  height: 500px; 
+  left: 0%;
+  margin: 20px auto;
+  border-radius: 10%; 
+  object-fit: cover;
+  color: white;
+  margin-left: 4%;
+  }
+
+
+.logo span {
+  color: #970978;
+  font-size: large;
+  font-weight: bold;
+  height: 40px;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  flex-grow: 1;
+  max-width: 400px;
+  margin: 0 20px;
+  height: 80%;
+  width: 150%;
+  left: 100;
+  gap: 47px;
+}
+
+.search-bar input {
+  width: 300%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+ 
+  
+}
+
+.search-bar button {
+  background: #5E5DF0;
+border-radius: 999px;
+box-shadow: #5E5DF0 0 10px 20px -10px;
+box-sizing: border-box;
+color: #f6f6f6;
+cursor: pointer;
+font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+opacity: 10;
+outline: 0 solid transparent;
+padding: 8px 18px;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+width: fit-content;
+word-break: break-word;
+border: 0;
+width: 80%;
+}
+
+.search-bar button:hover {
+  background-color: #0b66c3;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #de4040;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #1c85e8;
+}
+
+/* Profile Section */
+.profile-section{
+  display: flex;
+  align-items: left;
+
+  gap: 20px;
+}
+
+.profile-section button {
+  padding: 8px 15px;
+  border: none;
+  margin-left: auto;
+  background-color: #1c85e8;
+  color: rgb(155, 45, 45);
+  border-radius: 4px;
+  cursor: pointer;
+  
+ 
+
+/* CSS */
+
+background-color: initial;
+background-image: linear-gradient(-180deg, #be1df4, #c713a9);
+border-radius: 6px;
+box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+color: #FFFFFF;
+cursor: pointer;
+display: inline-block;
+font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+height: 40px;
+line-height: 40px;
+outline: 0;
+overflow: hidden;
+padding: 0 20px;
+pointer-events: auto;
+position: relative;
+text-align: center;
+touch-action: manipulation;
+user-select: none;
+-webkit-user-select: none;
+vertical-align: top;
+white-space: nowrap;
+width: 100%;
+z-index: 9;
+border: 0;
+transition: box-shadow .2s;
+
+
+
+}
+
+.profile-section button:hover {
+  background-color: #0b66c3;
+}
+
+
+
+
+
+
+
+/*POPULAR COURSES */ 
+.popular-courses {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.popular-courses h2 {
+  text-shadow: #969494;
+  color: rgb(212, 125, 26);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.courses-carousel, .courses-carouseTwo {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.courses-carousel:hover,
+.courses-carouseTwo:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.course-card, .course-cardTwo {
+  min-width: 200px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 0 0 auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.course-card:hover, .course-cardTwo:hover {
+  transform: scale(1.1); /* Scale individual cards on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.course-cardtwo {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  background-color: #969494;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.course-cardtwo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h3, .course-cardTwo h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.course-card p, .course-cardTwo p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.button-link {
+  background-color: #007bff;
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
+
+
+  
+/* HERO SECTION */ 
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px; /* Adjust the height as per your design */
+  background-image: url('src/KIDS.jpeg'); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  color: white; /* Ensures text is visible over the background */
+  border-radius: 10%; /* Optional, if you want rounded corners */
+  text-align: center; /* Centers the text horizontally */
+  box-shadow: #151313;
+}
+
+.hero-section h1,
+.hero-section p {
+  z-index: 1; /* Ensures the text appears above the background */
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+  background-color: #151515;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+/* Footer styling */
+.footer {
+display: flex;
+flex-wrap: wrap; /* Allows content to wrap to the next row if needed */
+gap: 20px; /* Space between sections */
+background-color: #f8f9fa; /* Light background color */
+padding: 20px;
+font-family: Arial, sans-serif;
+}
+
+.footer-section {
+flex: 1 1 200px; /* Ensures responsive sections with a minimum width */
+min-width: 200px; /* Prevents sections from becoming too narrow */
+}
+
+.footer-section h4 {
+font-size: 16px;
+color: #151313;
+margin-bottom: 10px;
+}
+
+.footer-section p {
+font-size: 14px;
+color: #666;
+line-height: 1.6;
+}
+/* Footer styling */
+.footer {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+background-color: #f8f9fa;
+padding: 20px;
+font-family: Arial, sans-serif;
+}
+
+.footer-section {
+flex: 1 1 200px;
+min-width: 200px;
+}
+
+.footer-section h4 {
+font-size: 16px;
+color: #333;
+margin-bottom: 10px;
+}
+
+.footer-section p {
+font-size: 14px;
+color: #666;
+line-height: 1.6;
+}
+
+/* Copyright Bar Styling */
+/* Copyright Bar Styling */
+.copyright-bar {
+position: relative;
+width: 100%; /* Ensure it spans full width */
+background-color: #333; /* Dark background */
+color: #fff; /* White text */
+padding: 10px 0; /* Vertical padding */
+font-size: 14px;
+font-family: Arial, sans-serif;
+text-align: center; /* Center-align the text */
+margin: 0; /* Remove any default margins */
+box-sizing: border-box; /* Ensure padding doesn’t affect the width */
+}
+
+body {
+margin: 0; /* Remove any body margin to align edges perfectly */
+}
+
+
+
+/*CATEGORIES */
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #070303;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background: linear-gradient(to bottom, HotPink, rgb(206, 95, 206));
+
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(2, 11, 131, 0.1);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #070303;
+}
+
+
+/*TRUSTED SECTION*/
+.trusted-section {
+  text-align: center;
+  padding: 20px 0;
+  background-color:white; /* Optional background color */
+}
+
+.trusted-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #0f0d0d; /* Optional text color */
+  border-color: #222;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo-container img {
+  max-height: 50px; /* Adjust the size */
+  max-width: 100px; /* Ensure logos stay proportionate */
+  object-fit: contain;
+}
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #222;
+  color: white;
+  font-size: 14px;
+}
+
+
+/* APP CATEGORY */
+/* General styles for the category page */
+.category-page {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Header styling */
+.category-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #070303;
+}
+
+/* Flex layout for categories */
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+/* Card styling */
+.category-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  width: 200px;
+  margin: 30px; /* Added margin for spacing between cards */
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.category-image {
+  width: 121%;
+  height: 180px;
+  object-fit: fill;
+}
+
+/* Title styling */
+.category-title {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+
+/* Anchor tag styling */
+.category-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #ffffff;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.footer-section {
+  width: 250px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-section p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section p a:hover {
+  text-decoration: underline;
+}
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #ffffff, #e0e7ff);
+}
+
+.background-section {
+  flex: 1;
+  background-image: url('Frontend\src\seriously.jpeg'); /* Change this to your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.background-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.social-login {
+  margin-top: 20px;
+}
+
+.social-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+.login-form {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  left: 3%;
+}
+
+.login-form h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-form p {
+  color: #555;
+  font-size: 0.9rem;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  left: 10;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.login-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #218838;
+}

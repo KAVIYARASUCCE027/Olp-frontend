@@ -1,0 +1,100 @@
+/* General styles */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc; /* Light theme */
+    color: #2c3e50;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading styles */
+  .heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2980b9; /* Blue theme for Data Science */
+  }
+  
+  /* Courses grid */
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Course card styles */
+  .card {
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background: #ecf0f1;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: #2980b9;
+  }
+  
+  .card-description {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  /* Footer styles */
+  .footer {
+    margin-top: 40px;
+    text-align: center;
+    background: #f8fcff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .footer-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .tutors-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tutor-item {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  .tutor-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .tutor-item a:hover {
+    text-decoration: underline;
+  }
+  
