@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 
 const AppCategory = () => {
   return (
@@ -8,95 +10,95 @@ const AppCategory = () => {
 
 
         <div className="category-card">
-          <a href="/blockchain">
-            <img
-              src="./bc.jpeg"
-              alt="Blockchain Image"
-              className="category-image"
-            />
-            <h3 className="category-title">Blockchain</h3>
-          </a>
+         <Link to="/blockchain">
+  <img
+    src="./bc.jpeg"
+    alt="Blockchain Image"
+    className="category-image"
+  />
+  <h3 className="category-title">Blockchain</h3>
+</Link>
         </div>
 
         <div className="category-card">
-          <a href="/cloud">
+          <Link to="/cloud">
             <img
               src="./aws.jpeg"
               alt="Cloud Computing Image"
               className="category-image"
             />
             <h3 className="category-title">Cloud Computing</h3>
-          </a>
+          </Link>
         </div>
 
         <div className="category-card">
-          <a href="/cloud">
+          <Link to="/Data Science">
             <img
               src="./Data Science.jpeg"
               alt="Cloud Computing Image"
               className="category-image"
             />
             <h3 className="category-title">Data Science</h3>
-          </a>
+          </Link>
         </div>
 
         <div className="category-card">
-          <a href="/cloud">
+          <Link to="/cloud">
             <img
               src="./cyber.jpeg"
               alt="Cloud Computing Image"
               className="category-image"
             />
             <h3 className="category-title">CyberSecurity</h3>
-          </a>
+          </Link>
         </div>
 
         <div className="category-card">
-          <a href="/cloud">
+          <Link to="/cloud">
             <img
               src="./aws.jpeg"
               alt="Cloud Computing Image"
               className="category-image"
             />
             <h3 className="category-title">Cloud Computing (aws)</h3>
-          </a>
+          </Link>
         </div>
 
 
         <div className="category-card">
-          <a href="/blockchain">
+          <Link to="/blockchain">
             <img
               src="./bc.jpeg"
               alt="Cloud Computing Image"
               className="category-image"
             />
             <h3 className="category-title">Blockchain</h3>
-          </a>
+          </Link>
         </div>
 
 
         <div className="category-card">
-          <a href="/cloud">
+          <Link to="/cloud">
             <img
               src="./Data Science.jpeg"
               alt="Cloud Computing Image"
               className="category-image"
             />
             <h3 className="category-title">Data Science</h3>
-          </a>
+          </Link>
         </div>
 
 
 
         <div className="category-card">
-          <a href="/cloud">
+          <Link to="/cloud">
             <img
               src="./iot.jpeg"
               alt="Cloud Computing Image"
               className="category-image"
             />
             <h3 className="category-title">IOT</h3>
-          </a>
+          </Link>
         </div>
 
         
